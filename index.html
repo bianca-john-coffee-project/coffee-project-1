@@ -12,9 +12,9 @@
 <body>
 <div class="container-fluid">
 
-    <div class="row align-items-center">
-        <div class="col-sm-12 text-center pt-4">
-            <h1>Coffee Finder</h1>
+    <div class="row align-items-center header">
+        <div class="col-sm-12 text-center">
+            <img src="Coffee%20friends.png" alt="coffee friends logo">
         </div>
     </div>
     <hr>
@@ -26,7 +26,7 @@
                        placeholder="Search for coffee by name">
             </div>
             <div class="col-3" style="padding-left: 8px">
-                <!--                <label class="control-label" for="roast-selection">Filter by roast</label>-->
+                                <label class="control-label d-sm-none" for="roast-selection">Filter by roast</label>
                 <select class="form-control" id="roast-selection">
                     <option>All</option>
                     <option>light</option>
@@ -39,8 +39,8 @@
             </div>
         </div>
     </form>
-    <form class="d-none">
-        <div class="form-row">
+    <form >
+        <div class="form-row d-sm-none">
             <div class="col-12">
                 <label class="control-label" for="add-coffee">Add coffee</label>
                 <input class="form-control" type="text" id="add-coffee" name="add">
