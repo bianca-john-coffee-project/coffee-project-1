@@ -2,14 +2,21 @@
     --lightest-brown: #C3A995;
     --light-brown: #AB947E;
     --mocha: #6F5E53;
-    --chocolate: #593D3B;
+    --chocolate: #593d3b;
 }
 
 body {
-    /*background-color: var(--lightest-brown);*/
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,169,149,0.7413340336134453) 100%);
     font-family: 'Lora', serif;
-}
 
+}
+img {
+    width: 40vw;
+}
+.header{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,169,149,1) 100%);
+
+}
 .card-title {
     font-size: 3vw;
 }
@@ -19,6 +26,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    height: 28vw;
 }
 
 .card-text {
@@ -27,7 +35,9 @@ body {
 }
 
 .card {
-    background-color: var(--lightest-brown);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,169,149,1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
 table {
@@ -55,9 +65,6 @@ td, th {
     color: lightpink;
 }
 
-.card-body {
-    height: 28vw;
-}
 
 /*#coffees {*/
 /*    margin: 5px;*/
@@ -73,9 +80,10 @@ hr {
     top: 16px;
     z-index: 1000;
     border-radius: 5px;
-    background-color: var(--chocolate);
+    background: rgba(89,61,59, 0.85);
 }
 
 .results {
     color: var(--lightest-brown);
 }
+
