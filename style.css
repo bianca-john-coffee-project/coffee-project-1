@@ -1,5 +1,5 @@
 :root {
-    --lightest-brown: #C3A995;
+    --lightest-brown: #c3a995;
     --light-brown: #AB947E;
     --mocha: #6F5E53;
     --chocolate: #593d3b;
@@ -82,8 +82,50 @@ hr {
     border-radius: 5px;
     background: rgba(89,61,59, 0.85);
 }
+.roast-label{
+    display: none;
+}
 
+.collapsible {
+    display:none;
+}
+.add-form{
+    display:none;
+}
 .results {
     color: var(--lightest-brown);
 }
 
+
+@media (min-width: 576px) {
+    .fa-plus-circle{
+        font-size: 2em;
+        color: white;
+    }
+    .add-form{
+        display: block;
+    }
+    .collapsible{
+        display: block;
+        background: rgba(89,61,59, 0.85);
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        margin:5px;
+
+    }
+    .active, .collapsible:hover {
+        background-color: var(--light-brown);
+    }
+    .content {
+        padding: 10px 18px;
+        display: none;
+        overflow: hidden;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,169,149,1) 100%);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+
+    }
+
+}
